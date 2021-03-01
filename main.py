@@ -23,6 +23,8 @@ for b in brand:
   request = requests.get(link)
   link_soup = BeautifulSoup(request.txt , "html.parser")
 
+  # scrapping alba
+
   t = link_soup.find("table")
   rows = t.find_all("tr")
   for row in rows:
